@@ -1,0 +1,14 @@
+package com.intuit.qbaccounting;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+
+@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
+public class QbAccountingApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(QbAccountingApplication.class, args);
+    }
+
+}
